@@ -902,13 +902,7 @@ const safeId  = s => s.replace(/[^a-zA-Z0-9]/g,'_');
 let viewMode = 'list'; // 'list' | 'cal'
 let calDate = new Date();
 calDate.setDate(1);
-let caps = [
-  {id:1,nombre:'Prevención y combate de incendios',tipo:'seguridad',audiencia:'operativo',estado:'realizada',fecha:'2024-09-10',vencimiento:'2025-09-10',proveedor:'ART Galeno',notas:'Obligatoria por norma ART. Renovar anualmente.',participantes:[{nombre:'María González',vencimiento:'2025-09-10'},{nombre:'Lucas Pérez',vencimiento:'2025-09-10'},{nombre:'Sofía Martínez',vencimiento:'2025-09-10'}],ex:false},
-  {id:2,nombre:'Manipulación segura de alimentos',tipo:'regulatoria',audiencia:'operativo',estado:'realizada',fecha:'2024-11-20',vencimiento:'2025-11-20',proveedor:'SENASA',notas:'',participantes:[{nombre:'Carlos Rodríguez',vencimiento:'2025-11-20'},{nombre:'Ana López',vencimiento:'2025-04-30'}],ex:false},
-  {id:3,nombre:'RCP y primeros auxilios',tipo:'seguridad',audiencia:'ambos',estado:'realizada',fecha:'2025-01-15',vencimiento:'2026-01-15',proveedor:'Cruz Roja',notas:'Renovación anual. Incluye desfibrilador.',participantes:[{nombre:'Diego Fernández',vencimiento:'2026-01-15'},{nombre:'Valentina Torres',vencimiento:'2026-01-15'}],ex:false},
-  {id:4,nombre:'Seguridad e higiene en el trabajo',tipo:'seguridad',audiencia:'ambos',estado:'programada',fecha:'2025-05-10',vencimiento:'',proveedor:'RRHH interno',notas:'Pendiente confirmar aula y horario.',participantes:[],ex:false},
-  {id:5,nombre:'Inducción a nuevos ingresos',tipo:'induccion',audiencia:'ambos',estado:'en_curso',fecha:'2025-04-01',vencimiento:'',proveedor:'RRHH interno',notas:'',participantes:[{nombre:'Tomás Díaz',vencimiento:''},{nombre:'Lucía Romero',vencimiento:''}],ex:false}
-];
+let caps = [];
 let colabsData = {}; // { nameKey: { displayName, area } }
 let nid=6, view='todas', fil='todos', tipoFil='todos', yearFil='todos', areaCapFil='todas', q='';
 let colabQ='', colabOpen=null, colabView='lista', areaFil='todos', gColabEdit=null;
